@@ -1,1 +1,29 @@
 node_modules
+# Node modules
+node_modules/
+dist/
+build/
+
+# Django
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.log
+*.pot
+*.pyc
+*.db
+db.sqlite3
+
+# Python venv
+venv/
+.env
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
