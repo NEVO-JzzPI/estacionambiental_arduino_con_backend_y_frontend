@@ -6,7 +6,7 @@ const SensorTable = () => {
   const [datos, setDatos] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8000/api/datos/")
+    axios.get("https://estacionambiental-backend.onrender.com/api/datos")
       .then((res) => setDatos(res.data))
       .catch((err) => console.error("Error al obtener datos:", err));
   }, []);

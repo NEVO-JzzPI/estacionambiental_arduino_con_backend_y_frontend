@@ -10,7 +10,7 @@ const HumedadAmbienteChart = () => {
 
   useEffect(() => {
   const obtenerDatos = () => {
-    axios.get("http://localhost:8000/api/datos/")
+    axios.get("https://estacionambiental-backend.onrender.com/api/datos")
       .then((res) => {
         const datosTransformados = res.data.map((registro) => ({
           fecha: new Date(registro.fecha).toLocaleTimeString(),
